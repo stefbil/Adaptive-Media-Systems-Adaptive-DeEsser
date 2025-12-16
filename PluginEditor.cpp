@@ -341,6 +341,10 @@ DeEsserAudioProcessorEditor::DeEsserAudioProcessorEditor(
                     juce::Colours::white.withAlpha(0.5f));
   aMode = std::make_unique<APVTS::ComboBoxAttachment>(apvts, "mode", mode);
 
+  mode.addItem("Split-Band", 1);
+  mode.addItem("Wideband", 2);
+  mode.addItem("Parametric", 3);
+        
   addAndMakeVisible(btnListen);
   btnListen.setButtonText("Listen");
   aListen =
