@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(TestDeEs VERSION 1.0.0)
+project(Adaptive Deesser VERSION 1.0.0)
 
 # JUCE path 
 add_subdirectory("../JUCE" build_juce) 
@@ -10,13 +10,13 @@ juce_add_plugin(TestDeEs
     FORMATS VST3 AU
     
     # for AU:
-    BUNDLE_ID "com.stefanos.TestDeEs"   
+    BUNDLE_ID "com.stefanos.Adaptive_Deesser"   
     PLUGIN_MANUFACTURER_CODE "Stef"
     PLUGIN_CODE "DeEs"                 
     
     # Plugin Settings
-    PRODUCT_NAME "TestDeEs" 
-    PLUGIN_NAME "TestDeEs"
+    PRODUCT_NAME "Adaptive Deesser" 
+    PLUGIN_NAME "Adaptive Deesser"
     
     FORMATS AU VST3 Standalone
     PLUGIN_MANUFACTURER_CODE "Stef"
@@ -64,4 +64,5 @@ target_link_libraries(TestDeEs
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags
+
 )
