@@ -5,6 +5,14 @@ project(Adaptive Deesser VERSION 1.0.0)
 # JUCE path 
 add_subdirectory("../JUCE" build_juce) 
 
+# include(FetchContent)
+# FetchContent_Declare(JUCE
+#     GIT_REPOSITORY https://github.com/juce-framework/JUCE.git
+#     GIT_TAG        8.0.8
+#     GIT_SHALLOW    TRUE)
+# FetchContent_MakeAvailable(JUCE)
+
+
 juce_add_plugin(TestDeEs
     # from 'pluginFormats="buildAU,buildVST3"'
     FORMATS VST3 AU
@@ -66,3 +74,4 @@ target_link_libraries(TestDeEs
         juce::juce_recommended_warning_flags
 
 )
+
